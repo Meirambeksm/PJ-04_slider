@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Nunito Sans, "Arial", sans-serif;
+}
+
+.container {
+  max-width: 1171px;
+  margin: 0 auto;
+}
+
+.button {
+  border: none;
+  border-radius: 2px;
+  box-shadow: 0px 5px 15px 0px rgba(227, 184, 115, 0.2);
+  outline: 0;
+  padding: 13px 33px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 11px;
+  font-style: italic;
+}
+
+.primary {
+  background-color: #e3b873;
+}
+
+.secondary {
+  background-color: transparent;
+  border: 1px solid #fff;
+  margin-left: 20px;
+  padding: 19px 40px;
+}
+
+.main-heading {
+  font-family: Yeseva One, "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+
+.title {
+  color: #e3b873;
+  font-family: Yeseva One;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 37.42px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: #181818;
+  font-family: Yeseva One;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27.72px;
+  text-transform: uppercase;
+}
+
+.bullet-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  width: 85px;
+  height: 85px;
+  background-color: #e3b873;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 2;
+  box-shadow: 0px 5px 30px 0px #e3b87333;
+  cursor: pointer;
+}
+
+.line {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 13px;
+}
+
+.line__background {
+  height: 1.54px;
+  width: 32px;
+  background-color: #e3b873;
+  border-radius: 30px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.form__label {
+  color: #363636;
+  opacity: 0.5;
+  font-size: 13px;
+  line-height: 21.28px;
+}
+
+.form__input {
+  border: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  height: 25px;
+  width: 231px;
+  color: #363636;
+  outline: none;
+  background-color: transparent;
+}
+
+.form__input::placeholder {
+  color: #363636;
+  font-size: 14px;
+  line-height: 22.92px;
+}
+
+.agreement {
+  cursor: pointer;
+  display: flex;
+  gap: 9px;
+}
+
+.checkbox {
+  display: none;
+}
+
+.agreement__text {
+  color: #181818;
+  font-size: 14px;
+  line-height: 22.92px;
+}
+
+.fake {
+  display: flex;
+  width: 18px;
+  height: 18px;
+  background: #e3b873;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+}
+.fake::before {
+  content: "\2714";
+  opacity: 0;
+  transition: 0.2s;
+  font-size: 12px;
+}
+.checkbox:checked + .fake::before {
+  opacity: 1;
+}
